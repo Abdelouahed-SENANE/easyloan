@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <title>Demander mon crédit en ligne</title>
+  </head>
+  <body>
+    <div class="app">
+      <div>
+        <h1 class="main-title">Demander mon crédit en ligne</h1>
+      </div>
+      <div class="wrapper">
+        <div class="row">
+          <div class="simulator">
+            <div class="steps__wrapper">
+              <div class="step active">
+                <span class="number_step">1</span>
+                Simuler mon crédit
+              </div>
+              <div class="step">
+                <span class="number_step">2</span>
+                Mes coordonnées
+              </div>
+              <div class="step">
+                <span class="number_step">3</span>
+                Mes infos personnelles
+              </div>
+            </div>
+            <div class="simulator_wrapper">
+              <div>
+                <div class="select_group">
+                  <label>Mon projet</label>
+                  <select name="" id="">
+                    <option value="PRET_PERSONNEL">J’ai besoin d’argent</option>
+                    <option value="OCCASION">
+                      Je finance mon véhicule d’occasion
+                    </option>
+                    <option value="REV">Je Gère mes imprévus</option>
+                    <option value="CREDIT_AUTOMOBILE">
+                      Je finance mon véhicule neuf
+                    </option>
+                    <option value="CREDIT_MENAGE">J’équipe ma maison</option>
+                  </select>
+                </div>
+                <div class="select_group">
+                  <label>Je suis</label>
+                  <select name="" id="">
+                    <option value="SALARIE_PRIVE">
+                      Salarié du secteur privé
+                    </option>
+                    <option value="SALARIE_PUBLIC">Fonctionnaire</option>
+                    <option value="PROFESSION_LIBERALE">
+                      Profession libérale
+                    </option>
+                    <option value="COMMERCANT">Commerçant</option>
+                    <option value="ARTISAN">Artisan</option>
+                    <option value="RETRAITE">Retraité</option>
+                    <option value="AUTRE">Autres professions</option>
+                  </select>
+                </div>
+
+                <div class="simulator_amount">
+                  <label for="">Montant (en DH)</label>
+                  <div class="simulator_range">
+                    <input
+                      class="field_number amount"
+                      type="number"
+                      step="any"
+                      name="amount"
+                      value="120000"
+                      aria-invalid="false"
+                    />
+                    <div>
+                      <input
+                        class="range_field"
+                        type="range"
+                        min="5000"
+                        max="600000"
+                        step="1000"
+                        name=""
+                        id=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="simulator_amount">
+                  <label for="">Montant (en DH)</label>
+                  <div class="simulator_range">
+                    <input
+                      class="field_number duration"
+                      type="number"
+                      step="any"
+                      name="amount"
+                      value="120"
+                      aria-invalid="false"
+                    />
+                    <div>
+                      <input
+                        class="range_field"
+                        type="range"
+                        min="12"
+                        max="120"
+                        step="6"
+                        name=""
+                        id=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="simulator_amount">
+                  <label for="">Montant (en DH)</label>
+                  <div class="simulator_range">
+                    <input
+                      class="field_number amount"
+                      type="number"
+                      step="any"
+                      name="amount"
+                      value="120000"
+                      aria-invalid="false"
+                    />
+                    <div>
+                      <input
+                        class="range_field"
+                        type="range"
+                        min="5000"
+                        max="600000"
+                        step="1000"
+                        name=""
+                        id=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="recap">
+            <div class="recap_wrapper">
+              <h2 class="recap-title">Mon récapitulatif</h2>
+              <table class="recap_table">
+                <thead>
+                  <tr>
+                    <td colspan="2">Mon projet</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td class="text-primary">
+                    <strong> Prêt Personnel </strong>
+                  </td>
+                </tbody>
+                <thead>
+                  <tr>
+                    <td colspan="2">Détails de mon crédit</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text_td">Vous êtes:</td>
+                    <td class="text_right">Fonctionnaire</td>
+                  </tr>
+                  <tr>
+                    <td class="text_td">Montant:</td>
+                    <td class="text_right">
+                      <span>10 000</span> <strong>DH</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text_td">Durée:</td>
+                    <td class="text_right">
+                      <span>24</span>
+
+                      <strong>mois</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text_td">Mensualité:</td>
+                    <td class="text_right">
+                      <span>469,40</span> <strong>DH</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text_td">Frais de dossier:</td>
+                    <td class="text_right">271,50 <strong>DH</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
