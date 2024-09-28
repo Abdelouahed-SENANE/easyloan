@@ -10,6 +10,7 @@
       type="image/x-icon"
     />
     <title>Demander mon crédit en ligne</title>
+    <script defer src="./scripts/step1.js"></script>
   </head>
   <body>
     <div class="app">
@@ -49,13 +50,13 @@
                     <option value="CREDIT_MENAGE">J’équipe ma maison</option>
                   </select>
                 </div>
-                <div class="select_group">
+                <div class="select_group ">
                   <label>Je suis</label>
-                  <select name="" id="">
-                    <option value="SALARIE_PRIVE">
+                  <select id="job" name="job" id="">
+                    <option  value="SALARIE_PRIVE">
                       Salarié du secteur privé
                     </option>
-                    <option value="SALARIE_PUBLIC">Fonctionnaire</option>
+                    <option selected value="SALARIE_PUBLIC">Fonctionnaire</option>
                     <option value="PROFESSION_LIBERALE">
                       Profession libérale
                     </option>
@@ -70,22 +71,24 @@
                   <label for="">Montant (en DH)</label>
                   <div class="simulator_range">
                     <input
+                      id="amount_number"
                       class="field_number amount"
                       type="number"
                       step="any"
                       name="amount"
-                      value="120000"
+                      value="500000"
                       aria-invalid="false"
                     />
                     <div>
                       <input
+                        id="amount_range"
                         class="range_field"
                         type="range"
                         min="5000"
                         max="600000"
                         step="1000"
                         name=""
-                        id=""
+                        value=""
                       />
                     </div>
                   </div>
@@ -140,13 +143,27 @@
                     </div>
                   </div>
                 </div>
+                <!-- Button -->
+                <div class="submit__button">
+                  <span class="btn btn_primary">
+                    Continuer 
+                    <small>Sans engagement</small>
+                    <span class="form_old_submit">
+                      <input type="submit" class="btn" placeholder=" " value="Continuer (sans engagement)" autocomplete="off">
+                    </span>
+                  </span>
+                </div>
+              </div>
 
-
-
+            </div>
+            <div class="box_shadow">
+              <div class="copyright_bloc">
+                  <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions préférentielles.</p>
+                  <p>Conformément à la loi 09-08, vous disposez d’un droit d’accès, de rectification et d’opposition au traitement de vos données personnelles. Ce traitement est autorisé par la CNDP sous le numéro A-GC-206/2014.</p>
               </div>
             </div>
           </div>
-
+        
           <div class="recap">
             <div class="recap_wrapper">
               <h2 class="recap-title">Mon récapitulatif</h2>
